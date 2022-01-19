@@ -1,0 +1,13 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>Almacen Stock</h1>
+
+<% @articulos.each do |articulo| %>
+    <div class="entry">
+        <%= image_tag(articulo.image_url) %>
+        <h3><%= articulo.nombre %></h3>
+
+    </div>
+<% end %>
