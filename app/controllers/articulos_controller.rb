@@ -1,8 +1,6 @@
 class ArticulosController < ApplicationController
   before_action :set_articulo, only: %i[ show edit update destroy ]
 
-  default_scope :order => 'nombre'
-
   # GET /articulos or /articulos.json
   def index
     @articulos = Articulo.all
